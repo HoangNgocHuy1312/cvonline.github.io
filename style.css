@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim');
+
+html,body {
+    font-family : "segue ui";
+    margin: 0 auto;
+    padding: 0;
+    color: #232020;
+    background-color: gray;
+}
+
+.header div {
+    display: inline-block;
+    margin-left: 54%;
+}
+
+.anhcanhan img {
+    width: 250px;
+    border-radius: 20%;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+h6 {
+    background-color: rgb(39, 65, 228);
+    width: 150px;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+#decortext {
+    font-family: 'Akronim', cursive;
+    font-size: 20px;
+    width: 350px;
+}
+
+.content {
+    background-color: aliceblue;
+    margin-top: 10px;
+}
+
+.row {
+    position: relative;
+    width: 80%;
+}
+
+.row::after {
+    content:'';
+    clear:both;
+    display: block;
+}
+
+.row button.header1 {
+    font-weight: bold;
+    background-color: purple;
+    color: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    transition: 0.4s;
+    bottom: -800px;
+    animation: dilen 3s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes dilen {
+	0%{bottom: -800px}
+	100%{bottom: 0}
+}
+
+a {
+    text-decoration: underline;
+    color:#e40e48;
+}
+
+strong {
+    background-color: #19e019;
+    margin-right: 15px;
+    width: 160px;
+    display: inline-block;
+}
+
+.container > * {
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+.project {
+    margin-bottom: 50px;
+}
+
+div {
+    padding: 10px;
+}
+
+.name {
+    background-color: greenyellow;
+    width: 220px;
+    border-radius: 10px;
+    
+}
+
+.header {
+    position: relative;
+    opacity: 0;
+    transition: 0.4s;
+    animation: divao 3s forwards;
+}
+
+@-webkit-keyframes divao {
+    0%{transform: translateX(-600px) ;opacity: 0}
+	100%{transform: translateX(0px) ;opacity: 1}
+}
+
+#gioithieu {
+    position: absolute;
+    color: white;
+    top: 26%;
+    left: 1%;
+    background-color: #0e7327;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer {
+    float: left;
+    width: 50%;
+}
+
+#noteclick {
+    position: relative;
+    left: -30%;
+    background-color: #f0f102;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.4s;
+    animation: divao 3s forwards;
+}
+
+@-webkit-keyframes divao {
+    0%{transform: translateX(-600px) ;opacity: 0}
+	100%{transform: translateX(0px) ;opacity: 1}
+}
+
+#noteclick::after {
+    content:'';
+    position: absolute;
+    border-width: 10px 10px 0 10px;
+    border-style: solid;
+    border-color: #f0f102 transparent;
+    top: 100%;
+    right: 50%;
+}
+
+.row .header1.xanh {
+    background-color: rgb(39, 65, 228);
+}
+
+.picture {
+    margin-left: auto;
+}
